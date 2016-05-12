@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VolumeListItemCell" customModule="ComicList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="150"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgA-3Q-4Iq">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="115"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="115" id="ElK-pg-Gia"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" text="Lorem fistrum ese que llega torpedo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYm-y2-L9f">
+                        <rect key="frame" x="0.0" y="123" width="80" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="27" id="ViE-Db-9Iv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="preferredMaxLayoutWidth">
+                                <integer key="value" value="80"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hYm-y2-L9f" secondAttribute="trailing" id="DHf-H5-qcv"/>
+                <constraint firstItem="hYm-y2-L9f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NR8-EE-xbC"/>
+                <constraint firstItem="hYm-y2-L9f" firstAttribute="top" secondItem="pgA-3Q-4Iq" secondAttribute="bottom" constant="8" id="W74-v9-8WK"/>
+                <constraint firstAttribute="trailing" secondItem="pgA-3Q-4Iq" secondAttribute="trailing" id="itD-Nw-bnx"/>
+                <constraint firstItem="pgA-3Q-4Iq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="viR-EO-4RX"/>
+                <constraint firstItem="pgA-3Q-4Iq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zKl-Ns-lOb"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="pgA-3Q-4Iq" id="JZr-hS-4YF"/>
+                <outlet property="textLabel" destination="hYm-y2-L9f" id="zJt-Gb-v0a"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="404"/>
+        </collectionViewCell>
+    </objects>
+</document>
